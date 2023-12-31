@@ -5,10 +5,11 @@ class Solution:
         for i in range(len(s)):
             char = s[i]
             if char in char_index:
-                char_index[char][1] = i
+                len_substring = i - char_index[char] - 1 
+                if len_substring > longest:
+                    longest = len_substring
             else:
-                char_index[char] = [i,i]
-            longest = max(longest, char_index[char][1] - char_index[char][0] -1)
+                char_index[char] = i
         return longest
             
         

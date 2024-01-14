@@ -13,14 +13,9 @@ class Solution:
             return True
             
         l,r = 0, len(s) -1
-        deleted_char = 0
         while l< r:
             if s[l] != s[r]:
-                if deleted_char>0:
-                    return False
-                else:
-                    deleted_char += 1
-                    return is_palin(s[l:r]) or is_palin(s[l+1:r+1])
+                return is_palin(s[l:r]) or is_palin(s[l+1:r+1])
             else:
                 r -= 1
                 l += 1

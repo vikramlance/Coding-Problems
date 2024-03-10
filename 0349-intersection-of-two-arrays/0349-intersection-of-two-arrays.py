@@ -6,4 +6,4 @@ class Solution:
         for i in nums2:
             if i in nums1:
                 res.append(i)
-        return list(res)
+        return res

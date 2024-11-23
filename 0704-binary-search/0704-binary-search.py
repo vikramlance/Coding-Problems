@@ -9,7 +9,7 @@ class Solution:
             return mid
         elif nums[mid] > target:
             result = self.search(nums[:mid], target)  # Search left half
-            return result if result != -1 else -1  # Adjust index if found
+            return result 
         else:
             result = self.search(nums[mid + 1:], target)  # Search right half
             return mid + 1 + result if result != -1 else -1  # Adjust index

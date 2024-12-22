@@ -9,8 +9,8 @@ class Solution:
         curr = head
         prev = dummy = ListNode()
         dummy.next = head
-        if not curr:
-            return curr
+        # if not curr:
+        #     return curr
         # if not curr.next and curr.val == val:
         #     return None            
         

@@ -11,8 +11,9 @@ class Solution:
             
             if nums[l] != val:
                 l += 1
-        for j in range(len(nums)):
-            if nums[j] == val:
-                return j
+        return l
+        # for j in range(len(nums)):
+        #     if nums[j] == val:
+        #         return j
         
                 
